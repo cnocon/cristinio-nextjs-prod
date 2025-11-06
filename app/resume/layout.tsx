@@ -1,9 +1,10 @@
 import "../ui/resume.module.scss";
 import styles from "../ui/resume.module.scss"
+import { oswald } from "../ui/fonts";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="grid grid-rows-2">
+    <div className={`grid grid-rows-2 ${oswald.className}`}>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h2 className={styles.resume_page_title}>Row One, Column One</h2>
