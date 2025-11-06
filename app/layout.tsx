@@ -1,6 +1,10 @@
+// By default, layouts and pages are Server Components, which lets you fetch data and render parts of your UI on the server, optionally cache the result, and stream it to the client.
 import type { Metadata } from "next";
 import "./ui/global.scss";
 import { openSans } from "./ui/fonts";
+import Link from 'next/link'
+import clsx from "clsx"
+import NavLinks from "./ui/nav-links";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${openSans.className} antialiased`}
       >
+       <NavLinks />
         <h1 className={`text-blue-500 ${openSans.className}`}>I'm blue text in the app layout. My font is Open Sans.!</h1>
         {children}
       </body>
