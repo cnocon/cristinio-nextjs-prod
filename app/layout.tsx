@@ -5,6 +5,7 @@ import { openSans } from "./ui/fonts";
 import Link from 'next/link'
 import clsx from "clsx"
 import NavLinks from "./ui/nav-links";
+import NavBar from "./ui/nav-bar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
       <body
         className={`${openSans.className} antialiased`}
       >
-       <NavLinks />
+       {/* <NavLinks /> */}
+       <NavBar />
         <h1 className={`text-blue-500 ${openSans.className}`}>I'm blue text in the app layout. My font is Open Sans.!</h1>
         {children}
       </body>
