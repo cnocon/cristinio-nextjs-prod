@@ -1,13 +1,13 @@
-export default function Page() {
+import Navigation from "../ui/nav-bar"
+
+export default function Page({
+  children
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div className={`grid grid-rows-2`}>
-      <div className="grid grid-cols-2 gap-4">
-        <div>First Column, Third Row</div>
-        <div>Second Column, Third Row</div>
-      </div>
-      <div className="grid grid-cols-1 gap-4">
-        <div>Only Column, Fourth Row</div>
-      </div>
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      {children}
     </div>
-  )
+  );
 }
