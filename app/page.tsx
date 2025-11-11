@@ -1,4 +1,4 @@
-import Breadcrumbs from "./ui/breadcrumbs"
+import Breadcrumbs from './ui/breadcrumbs'
 
 export default function Page({
   children

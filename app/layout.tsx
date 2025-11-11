@@ -1,6 +1,6 @@
 import Navigation from './ui/nav-bar'
 import './ui/global.scss'
-import Footer from './ui/home/footer'
+import Footer from './ui/footer'
 
 export default function RootLayout({
   children,

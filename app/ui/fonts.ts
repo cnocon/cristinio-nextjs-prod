@@ -1,9 +1,13 @@
-import { Open_Sans, Oswald } from "next/font/google"
+import { Oswald, Lato } from 'next/font/google';
 
 export const oswald = Oswald({
-  subsets: ['latin']
-})
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700']
+});
 
-export const openSans = Open_Sans({
-  subsets: ['latin']
+export const lato = Lato({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700', '900'],
 })
