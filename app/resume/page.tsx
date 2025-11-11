@@ -1,4 +1,4 @@
-import Navigation from "../ui/nav-bar"
+import Breadcrumbs from "../ui/breadcrumbs"
 
 export default function Page({
   children
@@ -7,6 +7,13 @@ export default function Page({
 }) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <Breadcrumbs breadcrumbs={[
+        {
+          name: 'Resumé',
+          href: '/resume',
+          current: true
+        }
+      ]} />
       {children}
     </div>
   );

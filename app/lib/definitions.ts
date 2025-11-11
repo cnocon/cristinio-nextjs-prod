@@ -1,26 +1,32 @@
+export type Breadcrumb = {
+  name: string,
+  href: string,
+  current: boolean
+}
+
 export type Courses = Course[]
 export type Course = {
-  title: String,
-  url: String,
-  platform: String,
-  instructor: null | String,
+  title: string,
+  url: string,
+  platform: string,
+  instructor: null | string,
   completedDate: Date,
-  certificateUrl: String,
-  description: String,
-  imageUrl: String
+  certificateUrl: string,
+  description: string,
+  imageUrl: string
 }
 
 export type Honor = {
-  name: String,
-  detail: String
+  name: string,
+  detail: string
 }
 export type Honors = Honor[]
 
 export type EducationItem = {
-  title: String,
-  school: String,
-  schoolUrl: String,
-  location: String,
+  title: string,
+  school: string,
+  schoolUrl: string,
+  location: string,
   startDate: Date,
   endDate: Date,
   honors: Honors
@@ -28,23 +34,23 @@ export type EducationItem = {
 export type Education = EducationItem[]
 
 export type TechSkill = {
-  label: String,
-  proficiencyPercentage: 90
+  label: string,
+  proficiencyPercentage: number
 }
 export type TechSkills = TechSkill[]
 
-export type SoftSkill = String
+export type SoftSkill = string
 export type SoftSkills = SoftSkill[]
 
 export type Job = {
   year: Date,
-  title: String,
-  location: String,
-  company: String,
+  title: string,
+  location: string,
+  company: string,
   startDate: Date,
   endDate: Date,
-  companyUrl: String,
-  responsibilities: String[]
+  companyUrl: string,
+  responsibilities: string[]
 }
 export type Jobs = Job[]
 

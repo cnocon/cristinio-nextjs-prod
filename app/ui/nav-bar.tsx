@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import NavItem from './NavItem'
+import NavItem from './nav-item'
 
 export default function Navigation() {
   return (
@@ -34,7 +34,9 @@ export default function Navigation() {
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <NavItem screen="lg" path="/" name="Home" />
+              <NavItem path="/about" name="About" screen="lg" />
               <NavItem path="/resume" name="Resumé" screen="lg" />
+              <NavItem path="/portfolio" name="Portfolio" screen="lg" />
             </div>
           </div>
         </div>
@@ -43,7 +45,9 @@ export default function Navigation() {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 pt-2 pb-4">
           <NavItem screen="sm" path="/" name="Home" />
+          <NavItem screen="sm" path="/about" name="About" />
           <NavItem screen="sm" path="/resume" name="Resumé" />
+          <NavItem screen="sm" path="/portfolio" name="Portfolio" />
         </div>
       </DisclosurePanel>
     </Disclosure>
