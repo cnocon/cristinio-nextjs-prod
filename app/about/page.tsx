@@ -1,4 +1,5 @@
 import Breadcrumbs from '../ui/breadcrumbs';
+import PageHeading from '../ui/page-heading'
 // import { PaperClipIcon } from '@heroicons/react/20/solid';
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
           current: true
         }
       ]}/>
+      <PageHeading title="About Me" />
       <div className="sm:my-4 md:my-8 overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800/50 dark:shadow-none dark:inset-ring dark:inset-ring-white/10">
         <div className="px-4 py-6 sm:px-6">
           <h3 className="text-base/7 font-semibold text-gray-900 dark:text-white">My Information</h3>
