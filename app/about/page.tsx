@@ -1,5 +1,5 @@
 import Breadcrumbs from '../ui/breadcrumbs';
-import { PaperClipIcon } from '@heroicons/react/20/solid';
+// import { PaperClipIcon } from '@heroicons/react/20/solid';
 
 export default function Page() {
   return (
@@ -13,38 +13,37 @@ export default function Page() {
       ]}/>
       <div className="sm:my-4 md:my-8 overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800/50 dark:shadow-none dark:inset-ring dark:inset-ring-white/10">
         <div className="px-4 py-6 sm:px-6">
-          <h3 className="text-base/7 font-semibold text-gray-900 dark:text-white">Applicant Information</h3>
-          <p className="mt-1 max-w-2xl text-sm/6 text-gray-500 dark:text-gray-300">Personal details and application.</p>
+          <h3 className="text-base/7 font-semibold text-gray-900 dark:text-white">My Information</h3>
+          <p className="mt-1 max-w-2xl text-sm/6 text-gray-500 dark:text-gray-300">Personal Details</p>
         </div>
         <div className="border-t border-gray-100 dark:border-white/5">
           <dl className="divide-y divide-gray-100 dark:divide-white/5">
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Full name</dt>
-              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">Margot Foster</dd>
+              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">Cristin O'Connor</dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Application for</dt>
-              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">Backend Developer</dd>
+              <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Professional role</dt>
+              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">Frontend Developer</dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Email address</dt>
               <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">
-                margotfoster@example.com
+                <a href="mailto:her@cristin.io">her@cristin.io</a>
               </dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Salary expectation</dt>
-              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">$120,000</dd>
+              <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">Location</dt>
+              <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">West Haven, UT</dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-900 dark:text-gray-100">About</dt>
               <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0 dark:text-gray-300">
-                Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-                pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+                I am a front-end developer who loves turning complex ideas into intuitive, accessible interfaces. I thrive at the intersection of design and development, helping teams communicate clearly through code.
               </dd>
             </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            {/* Attachments section with resumes */}
+            {/* <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm/6 font-medium text-gray-900 dark:text-gray-100">Attachments</dt>
               <dd className="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-gray-100">
                 <ul
@@ -91,7 +90,7 @@ export default function Page() {
                   </li>
                 </ul>
               </dd>
-            </div>
+            </div> */}
           </dl>
         </div>
       </div>

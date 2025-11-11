@@ -1,6 +1,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import NavItem from './nav-item';
+import Link from 'next/link';
 // import { oswald, lato } from './fonts';
 
 export default function Navigation() {
@@ -22,7 +23,7 @@ export default function Navigation() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <a href="/">
+              <Link href="/">
                 <img
                   alt="cristin.io Site Logo"
                   src="/logo-white.svg?color=indigo&shade=600"
@@ -33,8 +34,7 @@ export default function Navigation() {
                   src="/logo-white.svg?color=indigo&shade=500"
                   className="h-8 w-auto not-dark:hidden"
                 />
-              </a>
-            </div>
+            </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               {/* <NavItem screen="lg" path="/" name="Home" /> */}
               <NavItem path="/about" name="About" screen="lg" />
@@ -43,7 +43,9 @@ export default function Navigation() {
             </div>
           </div>
         </div>
+        </div>
       </div>
+
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 pt-2 pb-4">
